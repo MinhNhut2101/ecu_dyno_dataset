@@ -1,0 +1,4 @@
+AFR_table,valid_grid_rows,observed_cells,displayed_cells,total_cells
+Target AFR,4874,120,55,204
+Measured AFR,22392,123,72,204
+Measured - Target,4874,120,55,204

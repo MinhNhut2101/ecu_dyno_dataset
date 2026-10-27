@@ -1,0 +1,56 @@
+{
+  "config": {
+    "stoich_afr": 14.7,
+    "raw_lambda_scale": 1000.0,
+    "sample_period_s": 0.1,
+    "segment_gap_s": 2.0,
+    "max_age_s": {
+      "RPM": 0.25,
+      "Load": 0.25,
+      "TargetAFR": 2.0,
+      "LambdaSensor1": 0.25
+    },
+    "rpm_bin_width": 500,
+    "load_bin_width": 50,
+    "min_trip_samples": 30,
+    "min_trip_updates": 5,
+    "min_trips": 3,
+    "target_spread_flag_afr": 0.3,
+    "holdout_date_fraction": 0.2
+  },
+  "file_count": 50,
+  "raw_rows": 1414545,
+  "aggregation": "median of eligible per-trip medians; equal weight per trip per cell",
+  "source_update_identity": "trip_id plus per-channel source elapsed timestamp",
+  "holdout_dates": [
+    "2018-08-17",
+    "2018-08-20",
+    "2018-08-21",
+    "2018-08-23",
+    "2018-08-24",
+    "2018-09-04"
+  ],
+  "validation": "latest dates held out; then final map refit using all trips",
+  "error_sign": "measured minus target; paired before per-trip aggregation",
+  "conversion_assumption": "raw = lambda*1000, gasoline stoichiometric AFR 14.7; user-approved",
+  "missing_value_assumption": "causal carry-forward with channel-specific maximum age; unverified export semantics",
+  "periods": [
+    [
+      "20180713_20180720",
+      "2018-07-13",
+      "2018-07-20"
+    ],
+    [
+      "20180727_20180803",
+      "2018-07-27",
+      "2018-08-03"
+    ],
+    [
+      "20180806_20180904",
+      "2018-08-06",
+      "2018-09-04"
+    ]
+  ],
+  "interpolation": "none; unsupported cells remain missing",
+  "purpose": "historical AFR summaries, not verified fuel or target corrections"
+}

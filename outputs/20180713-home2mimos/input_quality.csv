@@ -1,0 +1,8 @@
+channel,raw_dtype,observed_count,missing_pct,unique_observed,conversion_errors,nonfinite_values
+RPM,float64,60088,12.194409130098052,2547,0,0
+Load,float64,52932,22.651352417693218,762,0,0
+BaseFuel,float64,50200,26.643578390542576,448,0,0
+LambdaSensor1,float64,58487,14.533923691786127,545,0,0
+TargetAFR,float64,3836,94.39451726506218,81,0,0
+CoolantTemp,float64,19151,72.0149635409817,150,0,0
+ThrottlePosition,float64,27996,59.089912761387055,456,0,0

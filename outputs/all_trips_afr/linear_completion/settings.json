@@ -1,0 +1,20 @@
+{
+  "source_settings": "outputs\\all_trips_afr\\settings.json",
+  "neighbors_initial": 8,
+  "neighbors_rule": "expand until full rank3 and condition<1e8",
+  "coordinate_scale": "one RPM bin and one Load bin each have unit distance",
+  "interpolation": "piecewise linear barycentric interpolation inside Delaunay convex hull",
+  "outside_hull": "separate exploratory map: centered local weighted least squares plane",
+  "weights": "1/(1+distance_in_bin_units**2)",
+  "anchors": "only supported cells from each dataset; never reuse generated values as anchors",
+  "source_preservation": "all supported values unchanged exactly",
+  "clipping": "none; range and nonpositive flags exported",
+  "validation": "leave one supported RPM column out; separately leave one supported Load row out",
+  "validation_limit": "near known support only; no evidence of far-region accuracy",
+  "far_distance_threshold_bins": 2,
+  "purpose": "exploratory table completion; extrapolation is not measured evidence or verified target selection",
+  "references": [
+    "https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.LinearNDInterpolator.html",
+    "https://docs.scipy.org/doc/scipy/tutorial/interpolate/extrapolation_examples.html"
+  ]
+}

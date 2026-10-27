@@ -1,0 +1,24 @@
+{
+  "source_file": "car_data\\20180713-home2mimos.csv",
+  "source_rows": 68433,
+  "sample_period_s": 0.1,
+  "segment_gap_s": 2.0,
+  "max_age_s": {
+    "RPM": 0.25,
+    "Load": 0.25,
+    "BaseFuel": 0.25,
+    "LambdaSensor1": 0.25,
+    "TargetAFR": 2.0,
+    "CoolantTemp": 2.0,
+    "ThrottlePosition": 0.25
+  },
+  "rpm_bin_width": 250,
+  "load_bin_width": 50,
+  "min_grid_samples": 30,
+  "min_fuel_updates": 5,
+  "duplicate_time_rule": "last non-null per channel in original row order",
+  "missing_value_assumption": "carry last observation, bounded age, unverified export semantics",
+  "units": "unchanged raw values",
+  "bin_intervals": "left closed, right open",
+  "purpose": "descriptive one-trip BaseFuel map; no tuning correction"
+}

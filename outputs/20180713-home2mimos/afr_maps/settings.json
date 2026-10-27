@@ -1,0 +1,32 @@
+{
+  "source_file": "car_data\\20180713-home2mimos.csv",
+  "source_rows": 68433,
+  "stoich_afr": 14.7,
+  "lambda_raw_scale": 1000.0,
+  "conversion_formula": "AFR = raw / lambda_raw_scale * stoich_afr",
+  "conversion_status": "user-approved assumption for this ECU Manager CSV",
+  "sample_period_s": 0.1,
+  "segment_gap_s": 2.0,
+  "max_age_s": {
+    "RPM": 0.25,
+    "Load": 0.25,
+    "LambdaSensor1": 0.25,
+    "TargetAFR": 2.0,
+    "CoolantTemp": 2.0,
+    "ThrottlePosition": 0.25
+  },
+  "rpm_bin_width": 500,
+  "load_bin_width": 50,
+  "min_grid_samples": 30,
+  "min_channel_updates": 5,
+  "afr_color_range": [
+    10.0,
+    20.0
+  ],
+  "duplicate_time_rule": "last non-null per channel in original row order",
+  "missing_value_assumption": "carry last observation, bounded age; unverified export semantics",
+  "load_units": "unchanged raw values",
+  "bin_intervals": "left closed, right open; Load low at top",
+  "error_sign": "measured AFR minus target AFR",
+  "purpose": "descriptive target/measured AFR tables from one trip; no BaseFuel correction"
+}

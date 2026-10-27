@@ -1,0 +1,4 @@
+metric,train_trips,heldout_trips,heldout_dates,eligible_test_trip_cells,predicted_trip_cells,coverage_pct,equal_trip_mae_afr,equal_trip_bias_afr,test_trips_with_predictions
+target,39,11,6,675,644,95.4074074074074,0.16558815975315688,0.09419141128602818,11
+measured,39,11,6,752,746,99.20212765957447,0.31162027681801113,0.016539976900460673,11
+error,39,11,6,675,644,95.4074074074074,0.30106107948998173,0.041434809650325005,11

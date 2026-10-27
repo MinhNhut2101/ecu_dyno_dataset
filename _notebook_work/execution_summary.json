@@ -1,0 +1,85 @@
+{
+  "code_cells_executed_this_run": 5,
+  "total_saved_executed_cells": 30,
+  "linear_completion": [
+    {
+      "dataset": "all_50_trips",
+      "metric": "target",
+      "total_cells": 320,
+      "supported_cells": 81,
+      "interpolated_cells": 1,
+      "extrapolated_cells": 238,
+      "far_extrapolated_cells": 168,
+      "full_min": 12.39370878829179,
+      "full_max": 17.505467871805592,
+      "nonpositive_cells": 0,
+      "outside_anchor_value_range_cells": 98
+    },
+    {
+      "dataset": "all_50_trips",
+      "metric": "measured",
+      "total_cells": 320,
+      "supported_cells": 86,
+      "interpolated_cells": 6,
+      "extrapolated_cells": 228,
+      "far_extrapolated_cells": 166,
+      "full_min": 9.89806172222103,
+      "full_max": 19.72320765904464,
+      "nonpositive_cells": 0,
+      "outside_anchor_value_range_cells": 100
+    },
+    {
+      "dataset": "all_50_trips",
+      "metric": "error",
+      "total_cells": 320,
+      "supported_cells": 81,
+      "interpolated_cells": 1,
+      "extrapolated_cells": 238,
+      "far_extrapolated_cells": 168,
+      "full_min": -9.225487699745706,
+      "full_max": 3.2414267668679217,
+      "nonpositive_cells": 242,
+      "outside_anchor_value_range_cells": 44
+    },
+    {
+      "dataset": "20180713_20180720",
+      "metric": "target",
+      "total_cells": 320,
+      "supported_cells": 63,
+      "interpolated_cells": 8,
+      "extrapolated_cells": 249,
+      "far_extrapolated_cells": 182,
+      "full_min": 13.489121899118295,
+      "full_max": 14.936201116510796,
+      "nonpositive_cells": 0,
+      "outside_anchor_value_range_cells": 88
+    },
+    {
+      "dataset": "20180727_20180803",
+      "metric": "target",
+      "total_cells": 320,
+      "supported_cells": 57,
+      "interpolated_cells": 3,
+      "extrapolated_cells": 260,
+      "far_extrapolated_cells": 191,
+      "full_min": 13.415408839987782,
+      "full_max": 22.55760049326943,
+      "nonpositive_cells": 0,
+      "outside_anchor_value_range_cells": 177
+    },
+    {
+      "dataset": "20180806_20180904",
+      "metric": "target",
+      "total_cells": 320,
+      "supported_cells": 80,
+      "interpolated_cells": 2,
+      "extrapolated_cells": 238,
+      "far_extrapolated_cells": 168,
+      "full_min": 12.566928231165939,
+      "full_max": 17.428661584854932,
+      "nonpositive_cells": 0,
+      "outside_anchor_value_range_cells": 120
+    }
+  ],
+  "linear_output_dir": "D:\\ECU_data\\outputs\\all_trips_afr\\linear_completion"
+}
